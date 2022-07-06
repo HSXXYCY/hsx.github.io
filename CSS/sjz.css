@@ -1,0 +1,91 @@
+* {
+    font-family: '宋体';
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+    body{
+        background: url(../IMGES/背景.jpg) no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        justify-content: center;
+        background-color: rgb(164, 170, 206);
+    }
+
+    h6 {
+        user-select: none;
+        cursor: auto
+    }
+    
+    span img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .wrap{
+        width: 100%;
+        text-align: center;
+        top: 100px;
+    }
+    .wrap::after{
+        content: '';
+        position: absolute;
+        top: -100px;
+        left: 50%;
+        width: 5px;
+        z-index: -999;
+        height: 1005px;
+        background-color: rgba(239, 23, 23, 0.699);
+    }
+    .box{
+        position: relative;
+        width: 100%;
+        height: 120px;
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .left{
+        position: relative;
+        width: 40%;
+        height: 160px;
+        border-radius: 15px;
+        text-align: center;
+        color: rgb(3, 250, 242);
+        margin-left: 250px;
+        /* background-color: rgba(255,255,255,.5); */
+    }
+    .right{
+        position: relative;
+        width: 40%;
+        height: 160px;
+        border-radius: 15px;
+        text-align: center;
+        color: rgb(3, 250, 242);
+        margin-right: 250px;
+        /* background-color: rgba(255,255,255,.5); */
+    }
+    .box:nth-child(even) .left{
+        background-color: rgba(192, 171, 75, 0.856);
+        box-shadow: 0 0 10px rgba(0,0,0,.3);
+    }
+    .box:nth-child(odd) .right{
+        background-color: rgba(247, 77, 77, 0.832);
+        box-shadow: 0 0 10px rgba(0,0,0,.3);
+    }
+    .center{
+        width: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .center>span{
+        width: 120px;
+        border-radius: 10px;
+        text-align:center;
+        font: 900 24px '';
+        line-height: 50px;
+        background-color: rgba(249, 136, 136, 0.808);
+    }
